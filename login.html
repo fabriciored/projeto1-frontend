@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faça login na EuAmoEstudar e continue sua jornada educacional">
+    <title>Login - EuAmoEstudar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">EuAmoEstudar</a></h1>
+            </div>
+            <nav class="nav"  aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="index.html#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="cadastro.html" class="nav-link btn-cadastro">Cadastre-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-header">
+                    <h2>Bem-vindo de volta!</h2>
+                    <p>Acesse sua conta e continue sua jornada de aprendizado</p>
+                </div>
+
+                <form class="login-form" action="#" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="login-email">E-mail</label>
+                        <input type="email" 
+                               id="login-email" 
+                               name="email" 
+                               required 
+                               placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-senha">Senha</label>
+                        <input type="password" 
+                               id="login-senha" 
+                               name="senha" 
+                               required 
+                               placeholder="Digite sua senha">
+                    </div>
+
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox" id="lembrar" name="lembrar">
+                            Lembrar-me
+                        </label>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Entrar
+                    </button>
+
+                    <div class="form-footer">
+                        <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se agora</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EuAmoEstudar</h4>
+                    <p>
+                        Comprometidos com o ODS 4 - Educação de Qualidade para todos, 
+                        construindo um futuro mais inclusivo e equitativo através da educação.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Currículos</h4>
+                    <div class="contact-info">
+                        <span><a href="https://fabriciored.github.io/">https://fabriciored.github.io/</a></span>
+                        <span><a href="https://marceloaugustooliveira.github.io/">https://marceloaugustooliveira.github.io/</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Desenvolvido para a disciplina ES44C - Programação Web Front-End.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
