@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EuAmoEstudar - Administração de Usuários">
+    <title>Admin - EuAmoEstudar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/068/020/636/small/open-blank-white-book-with-pages-gently-curved-isolated-on-transparent-background-png.png" alt="Icone de logo" class="logo-icon">
+                <h1>EuAmoEstudar</h1>
+            </div>
+            <nav class="nav" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="index.html#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="cadastro.html" class="nav-link btn-cadastro">Cadastre-se</a></li>
+                    <li><a href="admin.html" class="nav-link btn-admin">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="admin-section">
+            <div class="container">
+                <h2>Administração de Usuários</h2>
+                
+                <div class="admin-content">
+                    <div class="form-container">
+                        <form id="userForm" class="user-form">
+                            <div class="form-group">
+                                <label for="userName">Nome do Usuário:</label>
+                                <input type="text" id="userName" name="userName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="userEmail">E-mail:</label>
+                                <input type="email" id="userEmail" name="userEmail" required>
+                            </div>
+                            
+                            <div class="form-buttons">
+                                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                <button type="button" id="clearFormBtn" class="btn btn-clear">Limpar Campos</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="search-container">
+                        <div class="form-group">
+                            <label for="searchInput">Pesquisar:</label>
+                            <input type="text" id="searchInput" placeholder="Digite para pesquisar...">
+                        </div>
+                    </div>
+
+                    <div class="list-container">
+                        <div class="list-header">
+                            <h3>Usuários Cadastrados</h3>
+                            <button id="clearAllBtn" class="btn btn-danger">Excluir Todos</button>
+                        </div>
+                        <ul id="userList" class="user-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EuAmoEstudar</h4>
+                    <p>
+                        Comprometidos com o <a href="https://brasil.un.org/pt-br/sdgs/4">ODS 4</a> - Educação de Qualidade para todos, 
+                        construindo um futuro mais inclusivo e equitativo através da educação.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Currículos</h4>
+                    <div class="contact-info">
+                        <span><a href="https://fabriciored.github.io/">https://fabriciored.github.io/</a></span>
+                        <span><a href="https://marceloaugustooliveira.github.io/">https://marceloaugustooliveira.github.io/</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Desenvolvido para a disciplina ES44C - Programação Web Front-End.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
